@@ -32,6 +32,7 @@ Face_Detection/
 │   ├── Src/
 │   │   ├── main.c         # 主循环：LCD显示 + AI推理 + USART接收
 │   │   ├── ai_detection.c # 预处理/后处理/绘制
+│   │   ├── LCD_Display.c  # LCD显示处理
 │   │   └── usart.c        # USART1配置
 │   └── Inc/
 │       ├── ai_detection.h # 检测参数、SDRAM布局、接口声明
@@ -40,12 +41,11 @@ Face_Detection/
 ├── AI/App/                # Cube AI 运行时（app_x-cube-ai.c/h）
 ├── ai_generated_network/  # Cube AI 生成的网络代码（network.c/h + data）
 ├── PC_side/
+│   ├── test_photo/        # 5张测试图片
 │   └── send_image.py      # PC端图像发送脚本
 ├── MDK-ARM/               # Keil MDK 工程文件
 ├── model_stm32/           # STM32 Model Zoo 配置与文档
-├── txt_or_md/
-│   ├── report.md          # 实验报告
-│   └── debug_code_reference.c  # 调试代码参考
+├── docs/                  # 实验报告、实验指导书和用户手册
 └── .ioc                   # STM32CubeMX 配置文件
 ```
 
