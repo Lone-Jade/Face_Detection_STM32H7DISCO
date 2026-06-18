@@ -1,0 +1,10 @@
+face_detection_cm7\network_weights.o: ../AI/App/network_weights.c
+face_detection_cm7\network_weights.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+face_detection_cm7\network_weights.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+face_detection_cm7\network_weights.o: ..\Middlewares\ST\AI\Inc\ai_datatypes_defines.h
+face_detection_cm7\network_weights.o: ..\Middlewares\ST\AI\Inc\ai_platform.h
+face_detection_cm7\network_weights.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+face_detection_cm7\network_weights.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+face_detection_cm7\network_weights.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+face_detection_cm7\network_weights.o: ..\Middlewares\ST\AI\Inc\core_assert.h
+face_detection_cm7\network_weights.o: ../AI/App/network_weights.h

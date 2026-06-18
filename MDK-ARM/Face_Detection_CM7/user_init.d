@@ -1,0 +1,9 @@
+face_detection_cm7\user_init.o: ../AI/App/user_init.c
+face_detection_cm7\user_init.o: ../AI/App/user_init.h
+face_detection_cm7\user_init.o: ..\ai_generated_network\network.h
+face_detection_cm7\user_init.o: ..\Middlewares\ST\AI\Inc\stai.h
+face_detection_cm7\user_init.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+face_detection_cm7\user_init.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+face_detection_cm7\user_init.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+face_detection_cm7\user_init.o: ..\Middlewares\ST\AI\Inc\stai_debug.h
+face_detection_cm7\user_init.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

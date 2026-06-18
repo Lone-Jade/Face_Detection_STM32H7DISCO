@@ -1,0 +1,11 @@
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\stm32_lcd.c
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\stm32_lcd.h
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\../Fonts/fonts.h
+face_detection_cm7\stm32_lcd.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+face_detection_cm7\stm32_lcd.o: ..\BSP\Components\Common\lcd.h
+face_detection_cm7\stm32_lcd.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\../Fonts/font24.c
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\../Fonts/font20.c
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\../Fonts/font16.c
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\../Fonts/font12.c
+face_detection_cm7\stm32_lcd.o: ..\BSP\Utilities\lcd\../Fonts/font8.c

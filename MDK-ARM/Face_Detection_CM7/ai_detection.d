@@ -1,0 +1,15 @@
+face_detection_cm7\ai_detection.o: ../CM7/Core/Src/ai_detection.c
+face_detection_cm7\ai_detection.o: ../CM7/Core/Inc/ai_detection.h
+face_detection_cm7\ai_detection.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+face_detection_cm7\ai_detection.o: ..\AI\App\app_x-cube-ai.h
+face_detection_cm7\ai_detection.o: ..\Middlewares\ST\AI\Inc\stai.h
+face_detection_cm7\ai_detection.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+face_detection_cm7\ai_detection.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+face_detection_cm7\ai_detection.o: ..\Middlewares\ST\AI\Inc\ai_datatypes_defines.h
+face_detection_cm7\ai_detection.o: ..\Middlewares\ST\AI\Inc\ai_platform.h
+face_detection_cm7\ai_detection.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+face_detection_cm7\ai_detection.o: ..\Middlewares\ST\AI\Inc\core_assert.h
+face_detection_cm7\ai_detection.o: ..\ai_generated_network\network.h
+face_detection_cm7\ai_detection.o: ..\Middlewares\ST\AI\Inc\stai_debug.h
+face_detection_cm7\ai_detection.o: ..\AI\App\user_init.h
+face_detection_cm7\ai_detection.o: D:\EmbeddedSystem\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
