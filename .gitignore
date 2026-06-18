@@ -1,42 +1,3 @@
-# =============== Keil/MDK ===============
-# 编译输出
-*.uvguix.*
-*.uvoptx
-*.uvprojx.bak
-Objects/
-Listings/
-DebugConfig/
-RTE/
-
-# 编译生成的二进制文件
-*.axf
-*.bin
-*.hex
-*.elf
-*.map
-*.lst
-*.o
-*.d
-*.crf
-*.htm
-*.dep
-*.lnp
-*.sct
-*.Bak
-
-# J-Link / ST-Link 调试文件
-*.jlink
-*.ini
-
-# =============== STM32CubeMX 生成文件 ===============
-# 这些可以通过 .ioc 重新生成
-Drivers/
-Startup/
-.svd
-
-# CubeMX 项目文件（保留 .ioc，其他可删）
-.mxproject
-
 # =============== IDE ===============
 # VS Code
 .vscode/
@@ -46,7 +7,7 @@ Startup/
 .DS_Store
 Thumbs.db
 
-# =============== Python / face_detection ===============
+# =============== Python  ===============
 __pycache__/
 *.pyc
 *.pyo
@@ -73,15 +34,6 @@ WIDERFace/
 *.lzma
 *.lz4
 *.zst
-
-# =============== 图片 ===============
-*.png
-*.jpg
-*.jpeg
-
-# =============== Claude Code ===============
-CLAUDE.md
-.claude/
 
 # =============== .ai ===============
 *.ai/
