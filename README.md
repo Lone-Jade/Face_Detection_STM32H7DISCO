@@ -165,16 +165,6 @@ python PC_side/send_image.py face.jpg COM4 921600
 | 0xD0600000 | 相机缓冲（预留） | - |
 | 0xD0800000 | AI推理激活缓冲 | ~2.46MB |
 
-### 注意事项
-
-1. **D-Cache一致性**：预处理后必须调用 `SCB_CleanDCache_by_Addr()` 将数据从D-Cache刷入SDRAM，否则AI推理会读到脏数据
-2. **Keil项目依赖**：克隆后需要STM32CubeMX重新生成 `Drivers/` 和 `Middlewares/`
-3. **Cube AI版本**：推荐使用STM32 Cube AI Studio v1.0+ 或 X-CUBE-AI v9.0.0+
-4. **串口连接**：使用板载ST-Link/V3-1虚拟串口，Windows下通常识别为 `COM3` 或 `COM4`
-5. **图像格式**：PC端只发送320×240 ARGB8888原始像素数据，预处理（缩放/通道转换）在PC端完成
-6. **检测阈值**：当前阈值（DET_THRESHOLD=0.40, NMS_THRESHOLD=0.40, MIN_BOX_SIZE=10.0）经过Float32模型调优，INT8量化模型可能需要调整
-7. **电源**：建议使用开发板附带的5V/3A电源适配器，USB供电可能不够稳定
-
 ---
 
 <span id="english"></span>
@@ -346,12 +336,3 @@ Fixed image size: 320 × 240 × 4 = 307200 bytes
 | 0xD0600000 | Camera Buffer (reserved) | - |
 | 0xD0800000 | AI Activation Buffer | ~2.46MB |
 
-### Important Notes
-
-1. **D-Cache Coherency**: Always call `SCB_CleanDCache_by_Addr()` after preprocessing to flush D-Cache to SDRAM; otherwise the AI engine reads stale data
-2. **Keil Project Dependencies**: After cloning, regenerate `Drivers/` and `Middlewares/` using STM32CubeMX with the `.ioc` file
-3. **Cube AI Version**: STM32 Cube AI Studio v1.0+ or X-CUBE-AI v9.0.0+ recommended
-4. **Serial Connection**: Use the onboard ST-Link/V3-1 Virtual COM Port; typically appears as `COM3` or `COM4` on Windows
-5. **Image Format**: PC side sends 320×240 ARGB8888 raw pixel data; resizing and format conversion are handled PC-side
-6. **Detection Thresholds**: Current values (DET_THRESHOLD=0.40, NMS_THRESHOLD=0.40, MIN_BOX_SIZE=10.0) are tuned for Float32; adjust for INT8 quantized models if needed
-7. **Power Supply**: Use the included 5V/3A power adapter; USB power may be insufficient
