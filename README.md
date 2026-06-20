@@ -185,25 +185,25 @@ This project implements a **deep learning-based face detection system** on the *
 
 ```
 Face_Detection/
-├── CM7/Core/              # CM7 core source code
+├── CM7/Core/              # Source code for main CM7 core
 │   ├── Src/
-│   │   ├── main.c         # Main loop: LCD display + AI inference + USART receive
-│   │   ├── ai_detection.c # Preprocessing / postprocessing / drawing
+│   │   ├── main.c         # Main loop: LCD display + AI inference + USART reception
+│   │   ├── ai_detection.c # Preprocessing / postprocessing / drawing functions
+│   │   ├── LCD_Display.c  # LCD display driver processing
 │   │   └── usart.c        # USART1 configuration
 │   └── Inc/
-│       ├── ai_detection.h # Detection params, SDRAM layout, API declarations
+│       ├── ai_detection.h # Detection parameters, SDRAM layout, function interface declarations
 │       └── stm32h7xx_hal_conf.h
-├── CM4/Core/              # CM4 auxiliary core (standby)
+├── CM4/Core/              # Source code for auxiliary CM4 core (in idle standby state)
 ├── AI/App/                # Cube AI runtime (app_x-cube-ai.c/h)
-├── ai_generated_network/  # Cube AI generated network code (network.c/h + data)
+├── ai_generated_network/  # Auto-generated neural network code by Cube AI (network.c/h + data files)
 ├── PC_side/
-│   └── send_image.py      # PC-side image sender script
+│   ├── test_photo/        # Folder containing 5 test images
+│   └── send_image.py      # PC-side script for image transmission
 ├── MDK-ARM/               # Keil MDK project files
-├── model_stm32/           # STM32 Model Zoo configs and docs
-├── txt_or_md/
-│   ├── report.md          # Experiment report (Chinese)
-│   └── debug_code_reference.c  # Debug code reference
-└── .ioc                   # STM32CubeMX project file
+├── model_stm32/           # Configuration and documentation for STM32 Model Zoo
+├── docs/                  # Experiment reports, experiment guides and user manuals
+└── .ioc                   # STM32CubeMX project configuration file
 ```
 
 ### Hardware & Software Platform
