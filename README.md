@@ -5,9 +5,7 @@
 > **课程作业声明 / Coursework Disclaimer**  
 > 本项目为同济大学《嵌入式系统》课程大作业。  
 > This project is a coursework assignment for the *Embedded Systems* course at **Tongji University**.
-> 
 > 在 release 中有演示视频。
-> 
 > A demonstration video is available in the release.
 
 [中文](#chinese) | [English](#english)
